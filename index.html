@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es" id="pagina">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Raíces Visuales - Mitos y leyendas de Colombia">
+
+    <title>Raíces Visuales</title>
+
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/inicio.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+
+        <nav class="navbar">
+
+            <a href="#" class="logo-container">
+                <img src="imagenes/logo.png" alt="Logo de Raíces Visuales" data-alt="logoAlt" class="logo">
+            </a>
+
+            <div class="nav-right">
+
+                <ul class="nav-links">
+
+                    <li>
+                        <a href="#" data-lang="navInicio">Inicio</a>
+                    </li>
+
+                    <li>
+                        <a href="mitos.html" data-lang="navMitos">Mitos</a>
+                    </li>
+
+                    <li>
+                        <a href="leyendas.html" data-lang="navLeyendas">Leyendas</a>
+                    </li>
+
+                    <li>
+                        <a href="regiones.html" data-lang="navRegiones">Regiones</a>
+                    </li>
+
+                </ul>
+
+                <button class="language-switch" aria-label="Cambiar idioma">
+
+                    <img src="imagenes/idioma.png" alt="" class="language-icon">
+
+                    <span id="idiomaActual">ESP</span>
+
+                </button>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <!-- HERO -->
+        <section class="hero" id="inicio">
+
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content hero-animate">
+
+                <h1 data-lang="heroTitulo">
+                    MITOS Y LEYENDAS <br>
+                    DE COLOMBIA
+                </h1>
+
+                <p id="mensajeBienvenida"></p>
+
+                <p data-lang="heroDescripcion">
+                    Descubre las historias ancestrales que han dado forma a la memoria cultural colombiana.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#mitos" class="btn-primary" data-lang="btnMitos">
+
+                        EXPLORAR MITOS
+
+                    </a>
+
+                    <a href="#leyendas" class="btn-secondary" data-lang="btnLeyendas">
+
+                        EXPLORAR LEYENDAS
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- MITOS -->
+
+        <section class="featured-section" id="mitos">
+
+            <h2 class="section-title reveal" data-lang="mitosDestacados">
+
+                MITOS DESTACADOS
+
+            </h2>
+
+            <div class="carousel reveal">
+
+                <button class="carousel-btn left" id="prevMito" aria-label="Mito anterior">
+
+                    &#10094;
+
+                </button>
+
+                <div class="carousel-content">
+
+                    <div class="carousel-text">
+
+                        <h3 id="mitoTitulo">
+                            La Madremonte
+                        </h3>
+
+                        <p id="mitoDescripcion">
+                            Espíritu protector de la naturaleza y los bosques.
+                        </p>
+
+                        <a id="mitoBoton" href="mitos/madremonte.html" class="btn-primary">
+
+                            SABER MÁS...
+
+                        </a>
+
+                    </div>
+
+                    <div class="carousel-image">
+
+                        <img id="mitoImagen" src="imagenes/mitos/madremonte/madremonte.png" alt="La Madremonte">
+
+                    </div>
+
+                </div>
+
+                <button class="carousel-btn right" id="nextMito" aria-label="Siguiente mito">
+
+                    &#10095;
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- LEYENDAS -->
+
+        <section class="featured-section" id="leyendas">
+
+            <h2 class="section-title reveal" data-lang="leyendasDestacadas">
+
+                LEYENDAS DESTACADAS
+
+            </h2>
+
+            <div class="carousel reveal">
+
+                <button class="carousel-btn left" id="prevLeyenda" aria-label="Leyenda anterior">
+
+                    &#10094;
+
+                </button>
+
+                <div class="carousel-content">
+
+                    <div class="carousel-text">
+
+                        <h3 id="leyendaTitulo">
+                            La Llorona
+                        </h3>
+
+                        <p id="leyendaDescripcion">
+                            Espíritu errante que recorre los ríos y pueblos lamentando la pérdida de sus hijos.
+                        </p>
+
+                        <a id="leyendaBoton" href="leyendas/llorona.html" class="btn-primary">
+
+                            SABER MÁS...
+
+                        </a>
+
+                    </div>
+
+                    <div class="carousel-image">
+
+                        <img id="leyendaImagen" src="imagenes/leyendas/llorona/llorona.png" alt="La Llorona">
+
+                    </div>
+
+                </div>
+
+                <button class="carousel-btn right" id="nextLeyenda" aria-label="Siguiente leyenda">
+
+                    &#10095;
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- SOBRE EL FOLKLORE -->
+
+        <section class="about-section reveal" id="regiones">
+
+            <div class="about-text">
+
+                <h2 data-lang="sobreTitulo">
+                    Sobre el folklore colombiano
+                </h2>
+
+                <p data-lang="sobreTexto">
+                    El folklore colombiano representa la memoria cultural del país, transmitida a través de generaciones
+                    mediante relatos orales, símbolos y tradiciones regionales.
+                </p>
+
+            </div>
+
+            <div class="about-image">
+
+                <img src="imagenes/folklore/folklore.png" alt="Representación cultural del folklore colombiano">
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <div class="footer-column">
+
+            <a href="#" class="footer-logo-link">
+                <img src="imagenes/logo.png" alt="Logo de Raíces Visuales" data-alt="logoAlt" class="footer-logo">
+            </a>
+
+        </div>
+
+        <div class="footer-column">
+
+            <ul>
+
+                <li>
+                    <a href="#" data-lang="footerInicio">Inicio</a>
+                </li>
+
+                <li>
+                    <a href="#mitos" data-lang="footerMitos">Mitos</a>
+                </li>
+
+                <li>
+                    <a href="#leyendas" data-lang="footerLeyendas">Leyendas</a>
+                </li>
+
+                <li>
+                    <a href="#regiones" data-lang="footerRegiones">Regiones</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+        <div class="footer-column">
+
+            <h3 data-lang="footerTitulo">
+                RAÍCES VISUALES
+            </h3>
+
+            <p data-lang="footerDescripcion">
+                Sitio web cultural enfocado en la difusión de mitos y leyendas tradicionales de Colombia para una
+                audiencia internacional.
+            </p>
+
+        </div>
+
+    </footer>
+
+    <script src="js/traducciones.js"></script>
+    <script src="js/bienvenida.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/carrusel-mitos.js"></script>
+    <script src="js/carrusel-leyendas.js"></script>
+
+</body>
+
+</html>
