@@ -1,0 +1,152 @@
+/* ACCESIBILIDAD */
+
+/* RESPONSIVE */
+
+@media (max-width: 992px) {
+
+    .grid-mitos,
+    .grid-leyendas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .historia-content,
+    .story-content,
+    .region-content,
+    .significado-content {
+
+        flex-direction: column;
+    }
+
+    .historia-text,
+    .historia-image,
+    .story-text,
+    .story-image,
+    .region-text,
+    .region-image,
+    .significado-text,
+    .significado-image {
+
+        width: 100%;
+    }
+
+    .mapa-section {
+    position: relative;
+
+    min-height: auto;
+
+    padding: 6rem 7%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 2rem;
+    }
+
+    .mapa-colombia {
+        position: absolute;
+
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+
+        width: 90%;
+
+        opacity: 0.15;
+
+        z-index: 0;
+    }
+
+    .region-info {
+        position: relative;
+
+        width: 80%;
+        max-width: 700px;
+
+        top: auto;
+        left: auto;
+        right: auto;
+
+        z-index: 1;
+    }
+
+    .region-top,
+    .region-left,
+    .region-center,
+    .region-right,
+    .region-bottom {
+        top: auto;
+        left: auto;
+        right: auto;
+    }
+    
+    .navbar {
+        padding: 1.2rem 2rem;
+    }
+
+    .nav-right {
+        gap: 2rem;
+    }
+
+    .hero,
+    .carousel-content,
+    .about-section {
+        flex-direction: column;
+    }
+
+    .hero-content,
+    .hero-image,
+    .carousel-text,
+    .carousel-image,
+    .about-text,
+    .about-image {
+        width: 100%;
+    }
+
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+
+    .footer {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .grid-mitos,
+    .grid-leyendas {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-personajes {
+    grid-template-columns: 1fr;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .nav-links {
+        gap: 1.5rem;
+    }
+
+    .hero-content h1 {
+    font-size: 2.2rem;
+    }
+
+    .page-hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .section-title,
+    .about-text h2 {
+        font-size: 2.3rem;
+    }
+}

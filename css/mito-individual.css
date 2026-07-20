@@ -1,0 +1,383 @@
+/* HERO MITO */
+
+.hero-mito {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    padding-top: 10rem;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background:
+    linear-gradient(
+        rgba(15,15,15,0.55),
+        rgba(15,15,15,0.65)
+    ),
+    url('../imagenes/fondos/hero-personajes.png');
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-mito-content {
+    position: relative;
+    z-index: 5;
+
+    text-align: center;
+}
+
+.hero-mito-content h1 {
+    font-family: 'Cinzel', serif;
+
+    font-size: 3rem;
+
+    letter-spacing: 4px;
+}
+
+
+/* TITULOS */
+
+.section-title {
+    font-family: 'Cinzel', serif;
+
+    font-size: 3rem;
+
+    text-align: center;
+
+    margin-bottom: 4rem;
+}
+
+
+/* HISTORIA */
+
+.historia-section {
+    padding: 8rem 7%;
+}
+
+.historia-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 5rem;
+}
+
+.historia-text {
+    width: 45%;
+}
+
+.historia-text p {
+    line-height: 1.9;
+
+    margin-bottom: 1.5rem;
+
+    color: rgba(255,255,255,0.82);
+}
+
+.historia-image {
+    width: 45%;
+}
+
+.historia-image img {
+    border-radius: 24px;
+
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+
+/* BLOQUES HISTORIA */
+
+.story-block {
+    padding: 6rem 7%;
+}
+
+.story-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 5rem;
+}
+
+.story-text {
+    width: 45%;
+}
+
+.story-text h2 {
+    font-family: 'Cinzel', serif;
+
+    margin-bottom: 2rem;
+
+    font-size: 2.3rem;
+}
+
+.story-text p {
+    line-height: 1.9;
+
+    margin-bottom: 1.5rem;
+
+    color: rgba(255,255,255,0.82);
+}
+
+.story-image {
+    width: 45%;
+}
+
+.story-image img {
+    border-radius: 24px;
+
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+
+/* INVERTIR */
+
+.reverse .story-content {
+    flex-direction: row-reverse;
+}
+
+
+/* REGION */
+
+.region-origen {
+    padding: 8rem 7%;
+}
+
+.region-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 5rem;
+}
+
+.region-image {
+    width: 50%;
+
+    position: relative;
+}
+
+.region-image img {
+    border-radius: 24px;
+}
+
+.region-overlay-text {
+    position: absolute;
+
+    top: 1.5rem;
+    right: 1.5rem;
+
+    width: 25%;
+
+    background: rgba(15,15,15,0.75);
+
+    backdrop-filter: blur(8px);
+
+    padding: 1rem;
+
+    border-radius: 18px;
+
+    text-align: center;
+
+    line-height: 1.6;
+
+    font-size: 0.95rem;
+
+    border: 1px solid rgba(255,255,255,0.08);
+}
+
+.region-text {
+    width: 45%;
+}
+
+.region-text p {
+    line-height: 1.9;
+
+    margin-bottom: 1.5rem;
+
+    color: rgba(255,255,255,0.82);
+}
+
+
+/* SIGNIFICADO */
+
+.significado-section {
+    padding: 8rem 7%;
+}
+
+.significado-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 5rem;
+}
+
+.significado-image {
+    width: 45%;
+}
+
+.significado-image img {
+    border-radius: 24px;
+}
+
+.significado-text {
+    width: 45%;
+}
+
+.significado-text p {
+    line-height: 1.9;
+
+    margin-bottom: 1.5rem;
+
+    color: rgba(255,255,255,0.82);
+}
+
+
+/* PERSONAJES */
+
+.personajes-section {
+    padding: 8rem 7%;
+}
+
+.grid-personajes {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 3rem;
+}
+
+
+/* TARJETAS */
+
+.card-mito {
+    position: relative;
+
+    background: rgba(255,255,255,0.03);
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    padding-bottom: 2rem;
+
+    transition: all 0.4s ease;
+
+    display: flex;
+    flex-direction: column;
+
+    z-index: 0;
+}
+
+.card-mito img {
+    height: 220px;
+
+    object-fit: cover;
+
+    transition: all 0.4s ease;
+}
+
+.card-mito:hover img {
+    transform: scale(1.02);
+
+    filter: brightness(1.08)
+    saturate(1.05);
+}
+
+.card-mito h3 {
+    margin: 1rem;
+
+    font-size: 1.5rem;
+}
+
+.card-mito p {
+    margin: 0 1rem 2rem;
+
+    color: rgba(255,255,255,0.8);
+
+    line-height: 1.7;
+}
+
+.card-mito a {
+    margin: 0 auto;
+
+    display: inline-block;
+}
+
+.card-mito:hover {
+    transform: translateY(-6px);
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+}
+
+
+/* EFECTOS */
+
+.card-mito::before {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    border-radius: 20px;
+
+    background: linear-gradient(
+        135deg,
+        transparent,
+        rgba(197,155,95,0.25),
+        transparent
+    );
+
+    opacity: 0;
+
+    transition: 0.4s ease;
+
+    z-index: 1;
+}
+
+.card-mito:hover::before {
+    opacity: 1;
+}
+
+.card-mito::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background: radial-gradient(
+        circle at center,
+        rgba(197,155,95,0.10),
+        transparent 75%
+    );
+
+    opacity: 0;
+
+    transition: opacity 0.4s ease;
+
+    pointer-events: none;
+
+    z-index: 1;
+}
+
+.card-mito:hover::after {
+    opacity: 1;
+}
+
+.card-mito img,
+.card-mito h3,
+.card-mito p,
+.card-mito a {
+    position: relative;
+
+    z-index: 2;
+}

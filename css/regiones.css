@@ -1,0 +1,190 @@
+/* HERO REGIONES */
+
+.page-hero-regiones {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    position: relative;
+
+    background:
+    linear-gradient(
+        rgba(15,15,15,0.55),
+        rgba(15,15,15,0.65)
+    ),
+    url('../imagenes/fondos/hero-personajes.png');
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* CONTENIDO HERO */
+
+.page-hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.page-hero-content h1 {
+    font-size: 4rem;
+    font-family: 'Cinzel', serif;
+
+    margin-bottom: 2rem;
+}
+
+
+/* INTRO REGIONES */
+
+.catalogo-regiones {
+    padding: 6rem 7%;
+}
+
+.grid-regiones {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 3rem;
+}
+
+.card-region {
+    background: rgba(255,255,255,0.03);
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    padding-bottom: 2rem;
+
+    transition: 0.4s ease;
+}
+
+.card-region:hover {
+    transform: translateY(-6px);
+}
+
+.card-region img {
+    height: 220px;
+
+    object-fit: cover;
+}
+
+.card-region h3 {
+    margin: 1rem;
+
+    font-size: 1.5rem;
+}
+
+.card-region p {
+    margin: 0 1rem;
+
+    line-height: 1.7;
+
+    color: rgba(255,255,255,0.8);
+}
+
+
+/* MAPA */
+
+.mapa-section {
+    position: relative;
+
+    min-height: 200vh;
+
+    padding: 10rem 7%;
+
+    overflow: hidden;
+}
+
+.mapa-colombia {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: 70%;
+
+    opacity: 0.25;
+
+    pointer-events: none;
+}
+
+
+/* BLOQUES */
+
+.region-info {
+    position: absolute;
+
+    width: 26%;
+
+    background: rgba(15,15,15,0.75);
+
+    backdrop-filter: blur(10px);
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    border-radius: 24px;
+
+    padding: 2rem;
+
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+.region-info h2 {
+    font-family: 'Cinzel', serif;
+
+    margin-bottom: 1rem;
+
+    color: var(--dorado);
+}
+
+.region-info p {
+    line-height: 1.8;
+
+    margin-bottom: 1rem;
+
+    color: rgba(255,255,255,0.85);
+}
+
+.region-info ul {
+    padding-left: 1.2rem;
+}
+
+.region-info li {
+    margin-bottom: 0.6rem;
+}
+
+
+/* POSICIONES */
+
+.region-top {
+    top: 5%;
+    left: 35%;
+}
+
+.region-left {
+    top: 35%;
+    left: 6%;
+}
+
+.region-center {
+    top: 35%;
+    left: 35%;
+}
+
+.region-right {
+    top: 35%;
+    right: 6%;
+}
+
+.region-bottom {
+    top: 70%;
+    left: 52%;
+}

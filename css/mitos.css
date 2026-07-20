@@ -1,0 +1,153 @@
+/* HERO MITOS */
+
+.page-hero-mitos {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    position: relative;
+
+    background:
+    linear-gradient(rgba(15,15,15,0.55), rgba(15,15,15,0.65)),
+    url('../imagenes/fondos/hero-mitos.png');
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.page-hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.page-hero-content h1 {
+    font-size: 4rem;
+    font-family: 'Cinzel', serif;
+    margin-bottom: 2rem;
+}
+
+/* GRID MITOS */
+
+.catalogo-mitos {
+    padding: 6rem 7%;
+}
+
+.grid-mitos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    margin-bottom: 4rem;
+}
+
+/* TARJETAS MITOS */
+.card-mito {
+    position: relative;
+    background: rgba(255,255,255,0.03);
+    border-radius: 20px;
+    overflow: hidden;
+
+    padding-bottom: 2rem;
+
+    transition: all 0.4s ease;
+
+    display: flex;
+    flex-direction: column;
+    z-index: 0;
+}
+
+.card-mito img {
+    height: 220px;
+    object-fit: cover;
+
+    transition: all 0.4s ease;
+}
+
+.card-mito:hover img {
+    transform: scale(1.02);
+    filter: brightness(1.08) saturate(1.05);
+}
+
+.card-mito h3 {
+    margin: 1rem;
+    font-size: 1.5rem;
+}
+
+.card-mito p {
+    margin: 0 1rem 2rem;
+    color: rgba(255,255,255,0.8);
+}
+
+.card-mito a {
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.card-mito:hover {
+    transform: translateY(-6px);
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+}
+
+.card-mito:hover::before {
+    opacity: 1;
+}
+
+
+.card-mito::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 20px;
+
+    background: linear-gradient(
+        135deg,
+        transparent,
+        rgba(197,155,95,0.25),
+        transparent
+    );
+
+    opacity: 0;
+    transition: 0.4s ease;
+
+    z-index: 1;
+}
+
+.card-mito::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: radial-gradient(
+        circle at center,
+        rgba(197,155,95,0.10),
+        transparent 75%
+    );
+
+    opacity: 0;
+    transition: opacity 0.4s ease;
+
+    pointer-events: none;
+
+    z-index: 1;
+}
+
+.card-mito:hover::after {
+    opacity: 1;
+}
+
+.card-mito img,
+.card-mito h3,
+.card-mito p,
+.card-mito a {
+    position: relative;
+    z-index: 2;
+}
+
+.card-mito.activa {
+    border: 2px solid #c59b5f;
+}
